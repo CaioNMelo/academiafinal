@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula - Vital Ativa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/matricula.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Vital Ativa</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="matricula.html" class="active">Matrícula</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="matricula-main">
+        <section class="matricula-hero">
+            <h1>Matrícula</h1>
+            <p>Comece sua jornada fitness hoje mesmo</p>
+        </section>
+
+        <section class="formulario-section">
+            <div class="formulario-container">
+                <form id="matriculaForm" class="matricula-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo*</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone*</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF*</label>
+                        <input type="text" id="cpf" name="cpf" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="plano">Plano Desejado*</label>
+                        <select id="plano" name="plano" required>
+                            <option value="">Selecione um plano</option>
+                            <option value="basico">Plano Básico - R$ 99,90/mês</option>
+                            <option value="premium">Plano Premium - R$ 149,90/mês</option>
+                            <option value="completo">Plano Completo - R$ 199,90/mês</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="objetivo">Objetivo Principal*</label>
+                        <select id="objetivo" name="objetivo" required>
+                            <option value="">Selecione seu objetivo</option>
+                            <option value="emagrecimento">Emagrecimento</option>
+                            <option value="hipertrofia">Hipertrofia</option>
+                            <option value="relaxamento">Relaxamento</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="horario">Horário Preferencial*</label>
+                        <select id="horario" name="horario" required>
+                            <option value="">Selecione um horário</option>
+                            <option value="manha">Manhã (6h às 12h)</option>
+                            <option value="tarde">Tarde (12h às 18h)</option>
+                            <option value="noite">Noite (18h às 22h)</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Li e aceito os termos de uso e política de privacidade*</label>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Matrícula</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Vital Ativa</h3>
+                <p>Rua da Academia, 123</p>
+                <p>São Paulo - SP</p>
+                <p>Tel: (11) 1234-5678</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vital Ativa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/matricula.js"></script>
+</body>
+</html> 

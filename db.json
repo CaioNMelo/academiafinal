@@ -1,0 +1,27 @@
+{
+  "matriculas": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "email": "joao@email.com",
+      "telefone": "(11) 99999-9999",
+      "cpf": "123.456.789-00",
+      "plano": "premium",
+      "objetivo": "hipertrofia",
+      "horario": "manha",
+      "dataMatricula": "2024-05-20T10:00:00.000Z"
+    },
+    {
+      "id": "2fd1",
+      "nome": "Caio Melo",
+      "email": "cnnmelo@gmail.com",
+      "telefone": "(86) 99429-1438",
+      "cpf": "036.086.493-79",
+      "plano": "basico",
+      "objetivo": "emagrecimento",
+      "horario": "manha",
+      "termos": "on",
+      "dataMatricula": "2025-05-25T13:17:26.119Z"
+    }
+  ]
+}
