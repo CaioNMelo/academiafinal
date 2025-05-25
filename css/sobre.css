@@ -1,0 +1,269 @@
+/* Estilos Gerais */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.sobre-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/academia-externa.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 60px;
+}
+
+.sobre-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.sobre-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* História Section */
+.historia {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+}
+
+.historia-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.historia-texto p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.historia-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* Equipe Section */
+.equipe {
+    padding: 80px 0;
+}
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.membro {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.membro:hover {
+    transform: translateY(-10px);
+}
+
+.membro-img {
+    height: auto;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.membro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.membro-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.membro-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.membro-info .cargo {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.membro-info .cref {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Estrutura Section */
+.estrutura {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+}
+
+.estrutura-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.estrutura-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.estrutura-item:hover {
+    transform: translateY(-10px);
+}
+
+.estrutura-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.estrutura-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Galeria Section */
+.galeria {
+    padding: 80px 0;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.galeria-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    aspect-ratio: 4/3;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.05);
+}
+
+.galeria-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 20px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover .galeria-overlay {
+    transform: translateY(0);
+}
+
+/* Depoimentos Section */
+.depoimentos {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+}
+
+.depoimentos-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.depoimento {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.depoimento-content {
+    position: relative;
+    padding: 20px;
+}
+
+.depoimento-content i {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.depoimento-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.depoimento-content cite {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .historia-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .membro-img {
+        height: 250px;
+    }
+} 
